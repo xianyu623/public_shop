@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>小隊覓境 | 皮克敏吊飾</title>
+    <meta
+      name="description"
+      content="皮克敏吊飾購物網站：可愛、手工、收藏風。精選紅藍黃皮克敏、翼型與岩石型飾品，帶著你走過每個冒險旅程。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand" aria-label="小隊覓境品牌標誌">
+          <span class="brand-mark">P</span>
+          <span>小隊覓境</span>
+        </div>
+
+        <nav class="nav-links" aria-label="主選單">
+          <a href="#featured">新品</a>
+          <a href="#collection">收藏</a>
+          <a href="#story">故事</a>
+          <a href="#reviews">評價</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="pill-button ghost" type="button">登入</button>
+          <button class="cart-button" type="button" aria-label="購物車">
+            <span>購物車</span>
+            <span class="cart-count" id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">皮克敏吊飾 × 旅行必備</p>
+            <h1>把小小冒險帶在身上</h1>
+            <p class="subtitle">
+              每一枚皮克敏吊飾，都是一段清新友善的冒險故事。可愛色彩、精緻工藝、收藏感十足，適合送給自己與摯友。
+            </p>
+
+            <div class="cta-group">
+              <a class="primary-button" href="#featured">立即選購</a>
+              <button class="secondary-button" type="button">查看經典款</button>
+            </div>
+
+            <ul class="hero-meta" aria-label="品牌亮點">
+              <li>手工包裝</li>
+              <li>預購滿 3 件送吊繩</li>
+              <li>台灣出貨</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="皮克敏吊飾展示圖">
+            <div class="display-card large-card">
+              <div class="mini-figure red">🟢</div>
+              <div class="mini-figure blue">🔵</div>
+              <div class="mini-figure yellow">🟡</div>
+            </div>
+            <div class="display-card small-card">
+              <div class="badge">熱銷</div>
+              <div class="sparkles">✦ ✦ ✦</div>
+              <p>開箱即收藏</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-bar">
+        <div class="container trust-grid">
+          <div>
+            <strong>4.9 / 5</strong>
+            <span>顧客評價</span>
+          </div>
+          <div>
+            <strong>2,400+</strong>
+            <span>已售出</span>
+          </div>
+          <div>
+            <strong>48 小時</strong>
+            <span>出貨時間</span>
+          </div>
+          <div>
+            <strong>安心保固</strong>
+            <span>15 天退換</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="products" id="featured">
+        <div class="container" id="collection">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">熱門系列</p>
+              <h2>今天的冒險清單</h2>
+            </div>
+            <div class="filter-group" aria-label="分類篩選">
+              <button class="filter-button active" data-filter="all" type="button">全部</button>
+              <button class="filter-button" data-filter="red" type="button">紅色</button>
+              <button class="filter-button" data-filter="blue" type="button">藍色</button>
+              <button class="filter-button" data-filter="yellow" type="button">黃色</button>
+              <button class="filter-button" data-filter="special" type="button">限定</button>
+            </div>
+          </div>
+
+          <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="story" id="story">
+        <div class="container story-grid">
+          <div class="story-text">
+            <p class="eyebrow">品牌故事</p>
+            <h2>我們設計的不是飾品，而是「收藏感」</h2>
+            <p>
+              從珍藏小隊的日常到每次旅程的紀念，用可愛又充滿冒險氣息的皮克敏吊飾，把每個微小瞬間變成可攜帶的驚喜。
+            </p>
+            <p>
+              每一款都經過耐用材料與細節設計，貼心適合手機背蓋、背包、鑰匙圈與行李識別，讓你在旅途中也能帶著小小勇氣。
+            </p>
+          </div>
+
+          <div class="story-card">
+            <div class="story-badges">
+              <span>防水</span>
+              <span>輕量</span>
+              <span>收藏級</span>
+            </div>
+            <div class="story-art">
+              <div class="art-pikmin art-red">🟢</div>
+              <div class="art-pikmin art-blue">🔵</div>
+              <div class="art-pikmin art-yellow">🟡</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <div class="section-heading centered">
+            <p class="eyebrow">顧客分享</p>
+            <h2>玩家最愛的收藏選擇</h2>
+          </div>
+
+          <div class="review-grid">
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>「包裝超可愛，吊飾質感比想像中更精緻，手機吊起來真的很有收藏感。」</p>
+              <h3>阿蓉</h3>
+            </article>
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>「送禮完全沒問題，朋友收到馬上說像是小型寶物，最喜歡藍色款的細節。」</p>
+              <h3>明哲</h3>
+            </article>
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>「不只是萌，還有很實用的背包吊飾功能，出遊帶在身上很安心。」</p>
+              <h3>佳欣</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cart-panel" aria-label="購物車側欄">
+      <div class="cart-header">
+        <h3>購物車</h3>
+        <button type="button" class="close-cart" aria-label="關閉購物車">×</button>
+      </div>
+
+      <div class="cart-items" id="cart-items">
+        <p class="empty-cart">目前沒有商品</p>
+      </div>
+
+      <div class="cart-footer">
+        <div class="total-row">
+          <span>小計</span>
+          <strong id="cart-total">NT$ 0</strong>
+        </div>
+        <button class="checkout-button" type="button">結帳去</button>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark">P</span>
+            <span>小隊覓境</span>
+          </div>
+          <p>為每次探險留下小小紀念。</p>
+        </div>
+        <div>
+          <h4>購物資訊</h4>
+          <ul>
+            <li>配送說明</li>
+            <li>退換政策</li>
+            <li>常見問題</li>
+          </ul>
+        </div>
+        <div>
+          <h4>聯絡我們</h4>
+          <ul>
+            <li>hello@pikminshop.tw</li>
+            <li>週一至週五 10:00–18:00</li>
+            <li>台灣 • 夢見之地</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
